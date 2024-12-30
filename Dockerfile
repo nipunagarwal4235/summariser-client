@@ -12,6 +12,8 @@ RUN npm run build
 
 FROM nginx:1.27.3-alpine
 WORKDIR /usr/share/nginx/html
+# Add custom Nginx configuration
+COPY nginx.conf /etc/nginx/conf.d/default.conf
 RUN rm -rf *
 COPY --from=build /app/dist .
 EXPOSE 80
