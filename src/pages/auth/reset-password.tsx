@@ -133,7 +133,6 @@ export default function ResetPassword() {
         >
           <h1 className="text-2xl font-bold mb-4">Reset Password OTP</h1>
           <p className="mb-4">Enter the 6 digit code sent to your email</p>
-          <p className="mb-4">The otp is 888888</p>
           <div className="flex justify-between mb-8" onPaste={handlePaste}>
             {Array(6)
               .fill(0)

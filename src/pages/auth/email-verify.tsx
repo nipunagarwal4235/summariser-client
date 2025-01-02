@@ -90,7 +90,6 @@ export default function EmailVerify() {
         <p className="text-gray-600 mb-4 text-center">
           Enter the 6 digit code sent to your email
         </p>
-        <p className="text-gray-600 mb-4 text-center">The otp is 888888</p>
         <div className="flex justify-between mb-8" onPaste={handlePaste}>
           {Array(6)
             .fill(0)
